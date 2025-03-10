@@ -25,8 +25,8 @@ function createBoxes() {
   let inputValue = refs.input.value;
   let size = 20;
 
-  const max = refs.input.max;
-  const min = refs.input.min;
+  const max = parseInt(refs.input.max)
+  const min = parseInt(refs.input.min)
 
   if (inputValue > max || inputValue < min) {
     alert("Число должно быть в диапазоне от 0 до 100");
